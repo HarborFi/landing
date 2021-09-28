@@ -30,24 +30,24 @@ const StyledButton = styled.div`
   padding: 1.5em 1.5em;
   font-size: 1em;
   border-radius: 0.375em;
-  color: #6c8aec;
-  border: 1px solid #6c8aec;
+  color: white;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   cursor: pointer;
+  background-color: #3ce39b;
   &:hover {
     color: #fff;
-    background-color: #6c8aec;
+    background-color: #28d98d;
   }
 `;
 
 export const Hero = () => {
   return (
     <StyledHero>
-      <StyledTitle>Buy and Trade Index Products</StyledTitle>
+      <StyledTitle>Crypto Index Products</StyledTitle>
       <StyledSubTitle>
-        Quads Finance is a DeFi protocol for creating and trading crypto index
-        products on the Avalanche network.
+        Quads is a DeFi protocol for buying and trading crypto index products on
+        the Avalanche network.
       </StyledSubTitle>
       <StyledButton>Buy QUAD</StyledButton>
     </StyledHero>
