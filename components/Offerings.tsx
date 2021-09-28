@@ -66,16 +66,16 @@ export const Offerings = () => {
       <StyledCard style={{ width: "30em" }}>
         <StyledHeading>Create, trade and manage crypto indices.</StyledHeading>
       </StyledCard>
-      {indices.map((i) => {
+      {indices.map((i, k) => {
         return (
-          <StyledCard>
+          <StyledCard key={k}>
             <StyledTitle>{i.name}</StyledTitle>
             <StyledSubTitle>{i.info}</StyledSubTitle>
             <IndexChart />
             <StyledList>
-              {i.tokens.map((t) => {
+              {i.tokens.map((t, k) => {
                 return (
-                  <StyledRow>
+                  <StyledRow key={k}>
                     <StyledLabel>
                       <StyledLabelImage></StyledLabelImage>
                       <StyledLabelToken>{t.symbol}</StyledLabelToken>

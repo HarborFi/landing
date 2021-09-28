@@ -115,12 +115,14 @@ export const Footer = () => {
             <Logo isDark={false} />
           </StyledInfo>
         </StyledGroup>
-        {footerMenu.map((group) => {
+        {footerMenu.map((group, i) => {
           return (
-            <StyledMenuCol>
+            <StyledMenuCol key={i}>
               <StyledMenuColLabel>{group.label}</StyledMenuColLabel>
-              {group.items.map((item) => {
-                return <StyledMenuColItem>{item.name}</StyledMenuColItem>;
+              {group.items.map((item, i) => {
+                return (
+                  <StyledMenuColItem key={i}> {item.name}</StyledMenuColItem>
+                );
               })}
             </StyledMenuCol>
           );
