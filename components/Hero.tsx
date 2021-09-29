@@ -2,55 +2,37 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const StyledHero = styled.div`
-  padding: 6em 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+`;
+
+const StyledCard = styled.div`
+  padding: 70px 40px;
+  transform: rotateX(0deg);
+  border-radius: 40px;
+  box-shadow: 4px 12px 40px 6px rgb(0 0 0 / 9%);
 `;
 
 const StyledTitle = styled.div`
-  font-size: 4em;
+  font-size: 72px;
   font-weight: 700;
-  text-align: center;
-  color: #161c2d;
-  margin-bottom: 0.25em;
 `;
 
-const StyledSubTitle = styled.div`
-  color: #869ab8;
-  text-align: center;
-  font-size: 1.35em;
-  font-weight: 400;
-  max-width: 600px;
-  margin-bottom: 1.5em;
-`;
-
-const StyledButton = styled.div`
-  padding: 1.5em 1.5em;
-  font-size: 1em;
-  border-radius: 0.375em;
-  color: white;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  cursor: pointer;
-  background-color: #3ce39b;
-
-  &:hover {
-    color: #fff;
-    background-color: #28d98d;
-  }
+const StyledSpace = styled.div`
+  height: 34em;
 `;
 
 export const Hero = () => {
   return (
     <StyledHero>
-      <StyledTitle>Crypto Index Products</StyledTitle>
-      <StyledSubTitle>
-        Quads is a DeFi protocol for buying and trading crypto index products on
-        the Avalanche network.
-      </StyledSubTitle>
-      <StyledButton>Buy QUAD</StyledButton>
+      <StyledCard>
+        <StyledTitle>
+          Crypto index products.
+          <br /> On Avalanche.
+        </StyledTitle>
+        <StyledSpace />
+      </StyledCard>
     </StyledHero>
   );
 };

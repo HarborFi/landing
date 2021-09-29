@@ -8,18 +8,11 @@ import { AppButton } from "./AppButton";
 // assets
 import { Logo } from "./Logo";
 const StyledNav = styled.nav`
-  padding: 1em;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  @media screen and (min-width: 768px) {
-    padding: 2em;
-  }
-`;
-const StyledImage = styled.svg`
-  width: auto;
-  height: 50px;
-  max-width: inherit;
+  grid-column-start: 1;
+  grid-column-end: 3;
 `;
 
 export const Nav = () => {

@@ -21,7 +21,7 @@ class IndexChart extends Component<{}, any> {
             curve: "straight",
           },
         },
-        colors: ["#0021f5"],
+        colors: ["#000000"],
         fill: {
           opacity: 0.3,
         },
@@ -30,7 +30,7 @@ class IndexChart extends Component<{}, any> {
           enabled: false,
         },
         stroke: {
-          curve: "straight",
+          curve: "smooth",
         },
         grid: {
           padding: {
@@ -86,7 +86,13 @@ class IndexChart extends Component<{}, any> {
 
   render() {
     return (
-      <div id="chart" style={{ width: "100%", minHeight: 100 }}>
+      <div
+        style={{
+          width: "100%",
+          minHeight: 100,
+          overflow: "hidden",
+        }}
+      >
         <NoSSRChart
           options={this.state.options}
           series={this.state.series}

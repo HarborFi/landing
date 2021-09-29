@@ -1,49 +1,45 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import { Offerings } from "./Offerings";
-
 const StyledSection = styled.section`
-  height: 50em;
-  margin: 0em 0 10em;
-  position: relative;
-  z-index: 0;
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(#161c2d, #161c2d);
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-  }
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
 `;
 
-const StyledContainer = styled.div`
-  overflow: hidden;
-  padding: 0 1em;
-  @media screen and (min-width: 768px) {
-    padding: 0 2em;
-  }
-  @media screen and (min-width: 1024px) {
-    padding: 0 4em;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 0 12em;
-  }
-  @media screen and (min-width: 1440px) {
-    padding: 0 20em;
-  }
+const StyledCard = styled.div`
+  padding: 70px 40px;
+  transform: rotateX(0deg);
+  border-radius: 40px;
+  box-shadow: 4px 12px 40px 6px rgb(0 0 0 / 9%);
+  background: radial-gradient(
+      ellipse at 5% 5%,
+      #fec833 0%,
+      rgba(254, 200, 51, 0) 75%
+    ),
+    radial-gradient(ellipse at 95% 5%, #fdc1a7 0%, rgba(253, 193, 167, 0) 75%),
+    radial-gradient(ellipse at 95% 95%, #e4699a 15%, rgba(228, 105, 154, 0) 75%),
+    radial-gradient(ellipse at 5% 95%, #eb5551 30%, rgba(235, 85, 81, 0) 75%);
+  filter: saturate(1.1);
+`;
+
+const StyledText = styled.div`
+  color: white;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 1;
 `;
 
 export const Product = () => {
   return (
     <StyledSection>
-      <StyledContainer>
-        <Offerings></Offerings>
-      </StyledContainer>
+      <StyledCard>
+        <StyledText>
+          Buy. <br />
+          Trade. <br />
+          Launch. Crypto indexes.
+        </StyledText>
+      </StyledCard>
     </StyledSection>
   );
 };

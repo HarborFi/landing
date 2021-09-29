@@ -6,16 +6,16 @@ const StyledLogo = styled.div`
   align-items: center;
 `;
 const StyledText = styled.div`
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   color: #161c2d;
 `;
 
 const StyledImage = styled.svg`
   width: auto;
-  height: 50px;
+  height: 30px;
   max-width: inherit;
-  margin-right: 1em;
+  margin-right: 0.5em;
 `;
 
 interface LogoProps {
