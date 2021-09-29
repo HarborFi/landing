@@ -43,7 +43,7 @@ const StyledBannerSubTitle = styled.div`
 `;
 
 const StyledButton = styled.div`
-  padding: 1.5em 1.5em;
+  padding: 1em 1.5em;
   font-size: 1em;
   border-radius: 0.375em;
   color: #fff;

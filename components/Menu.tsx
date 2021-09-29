@@ -21,8 +21,8 @@ const StyledItem = styled.div`
 export const Menu = () => {
   return (
     <StyledBar>
-      <StyledItem>Home</StyledItem>
-      <StyledItem>FAQ</StyledItem>
+      {/* <StyledItem>Home</StyledItem>
+      <StyledItem>FAQ</StyledItem> */}
     </StyledBar>
   );
 };

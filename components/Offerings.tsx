@@ -5,6 +5,15 @@ import { indices } from "constants/indices";
 
 import IndexChart from "./Chart";
 
+import Ava from "../assets/tokens/ava.png";
+import Joe from "../assets/tokens/joe.png";
+import Png from "../assets/tokens/png.png";
+import Qi from "../assets/tokens/qi.png";
+import Snob from "../assets/tokens/snob.png";
+import Yak from "../assets/tokens/yak.png";
+
+const tokens = [Ava, Joe, Png, Qi, Snob, Yak];
+
 const StyledBox = styled.div`
   display: flex;
   padding: 2em 0 4em;
@@ -19,6 +28,7 @@ const StyledCard = styled.div`
     0 5px 15px 0 rgba(50, 50, 93, 0.15);
   margin-left: 2em;
 `;
+
 const StyledTitle = styled.div`
   font-weight: 600;
   font-size: 2em;
@@ -54,17 +64,49 @@ const StyledValue = styled.div``;
 
 const StyledHeading = styled.div`
   font-weight: 700;
-  font-size: 4em;
+  font-size: 2.5em;
   color: #161c2d;
-  margin-bottom: 0.25em;
+  margin-bottom: 1em;
   padding: 16px;
+`;
+
+const StyledGrid = styled.div`
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+`;
+
+const StyledItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+`;
+
+const StyledMedia = styled.img`
+  width: auto;
+  height: 50px;
+  max-width: inherit;
+  box-shadow: 0 0.08em 0.25em 0.075em rgba(0, 0, 0, 0.075);
+  border-radius: 50%;
 `;
 
 export const Offerings = () => {
   return (
     <StyledBox>
       <StyledCard style={{ width: "30em" }}>
-        <StyledHeading>Create, trade and manage crypto indices.</StyledHeading>
+        <StyledHeading>
+          We build and maintain the best index funds on Avalanche
+        </StyledHeading>
+        <StyledGrid>
+          {tokens.map((i) => {
+            return (
+              <StyledItem>
+                <StyledMedia src={i.src} alt="ava" />
+              </StyledItem>
+            );
+          })}
+        </StyledGrid>
       </StyledCard>
       {indices.map((i, k) => {
         return (

@@ -35,6 +35,7 @@ const StyledButton = styled.div`
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   cursor: pointer;
   background-color: #3ce39b;
+
   &:hover {
     color: #fff;
     background-color: #28d98d;

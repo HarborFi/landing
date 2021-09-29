@@ -16,7 +16,7 @@ const StyledSection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(rgb(12, 244, 144), rgb(12, 244, 144));
+    background-image: linear-gradient(#161c2d, #161c2d);
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
   }
 `;
