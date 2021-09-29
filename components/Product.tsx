@@ -25,7 +25,7 @@ const StyledCard = styled.div`
 
 const StyledText = styled.div`
   color: white;
-  font-size: 6em;
+  font-size: 7em;
   font-weight: 700;
   line-height: 1;
 `;
@@ -36,9 +36,9 @@ export const Product = () => {
       <StyledCard>
         <StyledText>
           Buy <br />
+          & <br />
           trade <br />
-          and <br />
-          launch crypto indexes.
+          crypto indexes
         </StyledText>
       </StyledCard>
     </StyledSection>

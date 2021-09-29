@@ -16,11 +16,11 @@ const StyledCard = styled.div`
 const StyledTitle = styled.div`
   font-size: 72px;
   font-weight: 700;
-  padding: 70px 40px;
+  padding: 70px 40px 0;
 `;
 
 const StyledSpace = styled.div`
-  height: 34em;
+  height: 35em;
   background-image: url("Apps3.png");
   background-position: 50% 100%;
   background-size: cover;
