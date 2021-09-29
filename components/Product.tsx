@@ -4,7 +4,11 @@ import styled from "styled-components";
 const StyledSection = styled.section`
   width: 100%;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
+  @media screen and (min-width: 1024px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 `;
 
 const StyledCard = styled.div`
@@ -25,9 +29,12 @@ const StyledCard = styled.div`
 
 const StyledText = styled.div`
   color: white;
-  font-size: 7em;
+  font-size: 4em;
   font-weight: 700;
   line-height: 1;
+  @media screen and (min-width: 1024px) {
+    font-size: 7em;
+  }
 `;
 
 export const Product = () => {

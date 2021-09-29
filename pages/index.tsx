@@ -5,9 +5,12 @@ import styled from "styled-components";
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  column-gap: 2em;
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 2em;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 2em;
+  }
 `;
 
 // Components

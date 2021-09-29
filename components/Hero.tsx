@@ -14,9 +14,12 @@ const StyledCard = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  font-size: 72px;
+  font-size: 2em;
   font-weight: 700;
   padding: 70px 40px 0;
+  @media screen and (min-width: 1024px) {
+    font-size: 72px;
+  }
 `;
 
 const StyledSpace = styled.div`

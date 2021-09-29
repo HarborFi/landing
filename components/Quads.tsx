@@ -16,8 +16,12 @@ const tokens = [Ava, Joe, Png, Qi, Snob, Yak];
 
 const StyledSection = styled.section`
   width: 100%;
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
+  @media screen and (min-width: 1024px) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 `;
 
 const StyledContainer = styled.div`
@@ -26,10 +30,16 @@ const StyledContainer = styled.div`
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  column-gap: 2em;
+  column-gap: 1em;
   row-gap: 2em;
   height: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  @media screen and (min-width: 1024px) {
+    column-gap: 2em;
+  }
 `;
 
 const StyledCard = styled.div`
