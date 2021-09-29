@@ -8,7 +8,7 @@ const StyledSection = styled.section`
 `;
 
 const StyledCard = styled.div`
-  padding: 70px 40px;
+  padding: 40px 40px;
   transform: rotateX(0deg);
   border-radius: 40px;
   box-shadow: 4px 12px 40px 6px rgb(0 0 0 / 9%);
@@ -35,9 +35,10 @@ export const Product = () => {
     <StyledSection>
       <StyledCard>
         <StyledText>
-          Buy. <br />
-          Trade. <br />
-          Launch. Crypto indexes.
+          Buy <br />
+          trade <br />
+          and <br />
+          launch crypto indexes.
         </StyledText>
       </StyledCard>
     </StyledSection>

@@ -8,7 +8,6 @@ const StyledHero = styled.div`
 `;
 
 const StyledCard = styled.div`
-  padding: 70px 40px;
   transform: rotateX(0deg);
   border-radius: 40px;
   box-shadow: 4px 12px 40px 6px rgb(0 0 0 / 9%);
@@ -17,10 +16,15 @@ const StyledCard = styled.div`
 const StyledTitle = styled.div`
   font-size: 72px;
   font-weight: 700;
+  padding: 70px 40px;
 `;
 
 const StyledSpace = styled.div`
   height: 34em;
+  background-image: url("Apps3.png");
+  background-position: 50% 100%;
+  background-size: cover;
+  border-radius: 40px;
 `;
 
 export const Hero = () => {

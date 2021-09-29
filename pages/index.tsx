@@ -6,8 +6,8 @@ import styled from "styled-components";
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 2em;
+  row-gap: 2em;
 `;
 
 // Components
@@ -16,7 +16,7 @@ import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { Product } from "../components/Product";
 import { Quads } from "../components/Quads";
-import { Footer } from "../components/Footer";
+import { Links } from "../components/Links";
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +31,7 @@ const Home: NextPage = () => {
         <Hero />
         <Product />
         <Quads />
+        <Links />
       </StyledGrid>
     </div>
   );

@@ -6,8 +6,8 @@ const StyledLogo = styled.div`
   align-items: center;
 `;
 const StyledText = styled.div`
-  font-size: 1.5em;
-  font-weight: 700;
+  font-size: 1.25em;
+  font-weight: 600;
   color: #161c2d;
 `;
 

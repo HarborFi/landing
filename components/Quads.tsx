@@ -27,8 +27,8 @@ const StyledContainer = styled.div`
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 2em;
+  row-gap: 2em;
   height: 100%;
 `;
 
@@ -52,7 +52,7 @@ const StyledPrice = styled.div`
   padding: 0.5em 1.25em 0 1.25em;
   font-size: 1.5em;
   font-weight: 600;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 `;
 
 const StyledGroup = styled.div``;
@@ -70,18 +70,24 @@ export const Quads = () => {
             <IndexChart />
           </StyledCard>
           <StyledCard>
-            <StyledTitle>Metaverse</StyledTitle>
-            <StyledPrice>$23.11</StyledPrice>
+            <StyledGroup>
+              <StyledTitle>Metaverse</StyledTitle>
+              <StyledPrice>$23.11</StyledPrice>
+            </StyledGroup>
             <IndexChart />
           </StyledCard>
           <StyledCard>
-            <StyledTitle>VIX</StyledTitle>
-            <StyledPrice>$23.11</StyledPrice>
+            <StyledGroup>
+              <StyledTitle>VIX</StyledTitle>
+              <StyledPrice>$23.11</StyledPrice>
+            </StyledGroup>
             <IndexChart />
           </StyledCard>
           <StyledCard>
-            <StyledTitle>Stable Yield</StyledTitle>
-            <StyledPrice>$23.11</StyledPrice>
+            <StyledGroup>
+              <StyledTitle>Stable Yield</StyledTitle>
+              <StyledPrice>$23.11</StyledPrice>
+            </StyledGroup>
             <IndexChart />
           </StyledCard>
         </StyledGrid>
